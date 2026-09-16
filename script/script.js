@@ -83,6 +83,5 @@ gsap.to(".text-hero p", {
         start: "center top",
         end: "bottom bottom",
         scrub: true,
-        markers: true
     }
 })
