@@ -16,18 +16,24 @@ gsap.to(".img-logo", {
 }, "+1.5")
 
 gsap.to(".box-sup",{
-    y: "-100%",
+    y: "-200%",
+    duration: 1,
     stagger: {
         each: .1,
         from: "center"
-    }
+    },
+    
 }, "+")
 
 gsap.to(".box-inf",{
-    y: "100%",
+    y: "200%",
+    duration: 1,
     stagger: {
         each: .1,
         from: "center"
-    }
+    },
+    
 }, "<")
+
+
  
