@@ -76,12 +76,36 @@ gsap.to(".hero-img img", {
     }
 })
 
-gsap.to(".text-hero p", {
-    y: 100,
+const tlWork = gsap.timeline({
     scrollTrigger: {
-        trigger: ".hero",
-        start: "center top",
+        trigger: ".galeria-scroll",
+        start: "25% top",
         end: "bottom bottom",
-        scrub: true,
+        scrub: 2,
+        onEnter: () => {
+            videoTrabalho.play().catch(error => console.log("Play bloqueado:", error));
+        },
+        onLeaveBack: () => {
+            videoTrabalho.pause();
+        }
     }
 })
+
+const videoTrabalho = document.querySelector('.main-item video')
+
+tlWork.to(".grid", {
+    scale: 3.6,
+    gap: "0vw",
+    ease: "power1.out"
+})
+
+tlWork.to(".grid-item:not(.main-item)", {
+    opacity: .15,
+    ease: "power1.out"
+}, "<")
+
+tlWork.to(".main-item", {
+    borderRadius: "0px",
+    ease: "power2.inOut",
+
+});
