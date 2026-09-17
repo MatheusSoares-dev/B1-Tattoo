@@ -72,7 +72,7 @@ gsap.to(".hero-img img", {
         trigger: ".hero",
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
+        scrub: true
     }
 })
 
