@@ -14,6 +14,7 @@
     --b1Gray: #A7A49E;
     --fontPrim: "Syne", sans-serif;
     --fontSecun: "Quicksand", sans-serif;
+    --fontTerc: "Cinzel Decorative", serif;
 }
 
 .espaco {
@@ -36,6 +37,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
+    
 
     img {
         position: absolute;
@@ -65,6 +67,7 @@ body {
     align-items: left;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 10rem;
 
 }
 
@@ -86,7 +89,7 @@ body {
 
     img {
         object-fit: cover;
-        height: 100%;
+        height: 50%;
     }
 }
 
@@ -116,7 +119,7 @@ body {
 }
 
 .galeria-scroll {
-    height: 350vh;
+    height: 320vh;
     position: relative;
 
 }
@@ -131,6 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 5rem;
 }
 
 .grid {
@@ -156,4 +160,40 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.sessao-arte {
+    margin-top: 10rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.arte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: var(--b1White);
+    font-family: var(--fontTerc);
+    gap: 8vh;
+    text-align: center;
+    img {
+        width: 10rem;
+    }
+
+    * {
+        display: block;
+    }
+
+    p {
+        width: 40rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+}
+
+.arte h1{
+    font-size: 3rem;
 }

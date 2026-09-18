@@ -37,6 +37,15 @@ tlHero.to(".box-inf", {
 
 }, "<")
 
+tlHero.set(".box-sup, .box-inf", { 
+    display: "none" 
+})
+
+tlHero.set(".preloader",{
+    pointerEvents: "none",
+    zIndex: -99
+})
+
 let heroTitulo = new SplitText(".titulo-hero", { type: "chars" })
 let LetrasHero = heroTitulo.chars;
 
@@ -109,3 +118,21 @@ tlWork.to(".main-item", {
     ease: "power2.inOut",
 
 });
+
+const divTrabalho = new SplitText(".titulo-trabalho h1", {type: "chars"})
+const letraTrabalho = divTrabalho.chars
+
+gsap.to(letraTrabalho, {
+    y: 150,
+    opacity: 0,
+    stagger: {
+        from: "random",
+        each: .1
+    },
+    scrollTrigger: {
+        trigger: ".sessao-trabalho",
+        start: "-16% top",
+        end: "center center",
+        scrub: 1,
+    }
+})
