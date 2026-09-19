@@ -37,7 +37,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    
+
 
     img {
         position: absolute;
@@ -96,19 +96,41 @@ body {
 .text-hero {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 1.5rem 0 0 0;
+    color: var(--b1White);
+    flex-direction: column;
+    overflow: hidden;
 
     p {
-        flex-direction: column;
+
         font-size: 1.1rem;
         z-index: -5;
-        color: var(--b1White);
+    }
+}
 
-        & span{
-            display: block;
-            padding: .5rem 0 0 0;
-        }
+.text-hero a {
+    color: var(--b1White);
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 0 0 0;
+    transition: all .5s ease-in;
+    text-transform: uppercase;
+    width: 10rem;
+    span {
+        display: block;
+        transform: rotate(180deg);
+        transition: all .5s ease-in;
+    }
+}
+
+.text-hero a:hover {
+    color: var(--b1Yellow);
+
+    span {
+        scale: 1.2;
+        transform: rotate(360deg);
     }
 }
 
@@ -184,6 +206,7 @@ body {
     font-family: var(--fontTerc);
     gap: 8vh;
     text-align: center;
+
     img {
         width: 10rem;
     }
@@ -200,12 +223,12 @@ body {
     }
 }
 
-.arte h1{
+.arte h1 {
     font-size: 3rem;
 }
 
 .scroll-horizontal {
-    margin-top: 10rem;  
+    margin-top: 10rem;
     color: var(--b1Black);
 }
 
@@ -221,7 +244,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: max-content;
-    height: 100vh;  
+    height: 100vh;
     will-change: transform;
 }
 
@@ -236,13 +259,58 @@ body {
 
 .name-horizontal h1 {
     font-family: var(--fontPrim);
-    font-size: clamp(10vh, 40vw ,45vw);
+    font-size: clamp(10vh, 40vw, 45vw);
     font-weight: 800;
     white-space: nowrap;
     color: var(--b1Red);
 }
 
 .theArtist {
-    height: 100vh;
     background-color: var(--b1White);
+
+
+}
+
+.cleiton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 3rem;
+
+    img {
+        width: 30vw;
+        border-radius: 8px;
+    }
+}
+
+.text-cleiton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;  
+
+}
+
+.titulo-artista {
+    h1 {
+        font-family: var(--fontPrim);
+        color: var(--b1Red);
+        font-weight: 800;
+        font-size: clamp(5rem, 18vh,20vh);
+    }
+
+    span {
+        font-family: var(--fontTerc);
+        font-size: 1.4rem;
+        font-weight: 530;
+    }
+}
+
+.text-cleiton p {
+    width: 50%;
+    font-weight: 500;
+    strong {
+        text-transform: uppercase;
+    }
 }
