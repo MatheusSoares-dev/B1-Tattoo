@@ -7,7 +7,7 @@
 
 
 :root {
-    --b1Red: #eb2012;
+    --b1Red: #d81103;
     --b1Yellow: #E3D300;
     --b1Black: #0B0B0A;
     --b1White: #F2F0EB;
@@ -202,4 +202,47 @@ body {
 
 .arte h1{
     font-size: 3rem;
+}
+
+.scroll-horizontal {
+    margin-top: 10rem;  
+    color: var(--b1Black);
+}
+
+.conteudo-scroll {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--b1Black), var(--b1White));
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+    height: 100vh;  
+    will-change: transform;
+}
+
+.largura {
+    padding-top: 3rem;
+    width: 300vw;
+}
+
+.name-horizontal {
+    text-align: center;
+}
+
+.name-horizontal h1 {
+    font-family: var(--fontPrim);
+    font-size: clamp(10vh, 40vw ,45vw);
+    font-weight: 800;
+    white-space: nowrap;
+    color: var(--b1Red);
+}
+
+.theArtist {
+    height: 100vh;
+    background-color: var(--b1White);
 }

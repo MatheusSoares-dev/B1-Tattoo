@@ -136,3 +136,23 @@ gsap.to(letraTrabalho, {
         scrub: 1,
     }
 })
+
+const conteudo = document.querySelector(".conteudo");
+
+const quantidadeScroll = () => {
+    return conteudo.scrollWidth - window.innerWidth
+}
+
+gsap.to(conteudo, {
+    x: () => -quantidadeScroll(),
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".conteudo-scroll",
+        start: "top top",
+        end: () => "+=" + quantidadeScroll(),
+        scrub: 2,
+        pin: true,
+        invalidateOnRefresh: true
+    }
+});
+
