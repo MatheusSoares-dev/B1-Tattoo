@@ -95,14 +95,20 @@ body {
 
 .text-hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     padding: 1.5rem 0 0 0;
 
     p {
+        flex-direction: column;
         font-size: 1.1rem;
         z-index: -5;
-        color: var(--b1White)
+        color: var(--b1White);
+
+        & span{
+            display: block;
+            padding: .5rem 0 0 0;
+        }
     }
 }
 

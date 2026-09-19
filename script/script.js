@@ -55,7 +55,7 @@ tlHero.from(".hero-img img", {
     opacity: 0,
     duration: 1,
     ease: "sine.out",
-}, "<+.6")
+}, "<-.3")
 
 
 tlHero.from(LetrasHero, {
