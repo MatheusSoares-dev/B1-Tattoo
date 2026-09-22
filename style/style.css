@@ -267,6 +267,7 @@ body {
 }
 
 .theArtist {
+    width: 100%;
     background-color: var(--b1White);
 }
 
