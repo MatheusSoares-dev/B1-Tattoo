@@ -160,8 +160,9 @@ const tlMsg = gsap.timeline({
     scrollTrigger: {
         trigger: ".tela-msg",
         start: "-10% top",
-        end: "125% bottom",
+        end: "115% bottom",
         scrub: 1,
+       
     }
 })
 
