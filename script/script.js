@@ -174,5 +174,5 @@ tlMsg.from(letraMsg.words, {
     duration: 1,
     stagger: 1,
     width: 0,
-    ease: "back.out"
+    ease: "back.out(1.7))"
 })
