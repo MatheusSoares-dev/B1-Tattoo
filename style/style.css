@@ -343,18 +343,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    
 }
 
 .msg-config {
     height: 100%;
-    width: 100%;
+    width: 70%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
     gap: 3vh;
     padding: 2rem 1rem;
-
+    background-color: #e9e8e7b2;
+    border-radius: 20px;
 }
 
 .titulo-msg {
@@ -366,12 +368,6 @@ body {
     font-size: 2rem;
     margin: 2rem 0;
     border-bottom: 1px solid var(--b1Gray);
-}
-
-.ideia {
-    position: absolute;
-    left: 0;
-    
 }
 
 .balao {
