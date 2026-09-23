@@ -337,8 +337,6 @@ body {
     }
 }
 
-
-
 .tela-msg {
     display: flex;
     justify-content: center;
@@ -366,7 +364,6 @@ body {
     font-family: var(--fontTerc);
     font-weight: 400;
     font-size: 2rem;
-    margin: 2rem 0;
     border-bottom: 1px solid var(--b1Gray);
 }
 
@@ -375,17 +372,19 @@ body {
     padding: .2rem .8rem;
     border-radius: 8px;
     color: #c8d4cf;
+    
 }
 
 .msg-cliente {
     background-color: #154d36;
     align-self: flex-end;
-
+    overflow: hidden;
 }
 
 .msg-b1 {
     align-self: flex-start;
     background-color: #242727;
+    overflow: hidden;
 }
 
 .img-projeto {

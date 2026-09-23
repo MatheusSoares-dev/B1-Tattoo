@@ -37,11 +37,11 @@ tlHero.to(".box-inf", {
 
 }, "<")
 
-tlHero.set(".box-sup, .box-inf", { 
-    display: "none" 
+tlHero.set(".box-sup, .box-inf", {
+    display: "none"
 })
 
-tlHero.set(".preloader",{
+tlHero.set(".preloader", {
     pointerEvents: "none",
     zIndex: -99
 })
@@ -119,7 +119,7 @@ tlWork.to(".main-item", {
 
 });
 
-const divTrabalho = new SplitText(".titulo-trabalho h1", {type: "chars"})
+const divTrabalho = new SplitText(".titulo-trabalho h1", { type: "chars" })
 const letraTrabalho = divTrabalho.chars
 
 gsap.to(letraTrabalho, {
@@ -156,4 +156,23 @@ gsap.to(conteudo, {
     }
 });
 
+const tlMsg = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".tela-msg",
+        start: "-10% top",
+        end: "125% bottom",
+        scrub: 1,
+    }
+})
 
+const letraMsg = new SplitText(".balao p", {type: "words"})
+
+tlMsg.from(letraMsg.words, {
+    autoAlpha: 0,
+    y: 100,
+    x: -100,
+    duration: 1,
+    stagger: 1,
+    width: 0,
+    ease: "back.out"
+})
