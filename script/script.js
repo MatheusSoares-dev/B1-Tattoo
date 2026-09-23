@@ -150,7 +150,7 @@ gsap.to(conteudo, {
         trigger: ".conteudo-scroll",
         start: "top top",
         end: () => "+=" + quantidadeScroll(),
-        scrub: 2,
+        scrub: 1,
         pin: true,
         invalidateOnRefresh: true
     }
