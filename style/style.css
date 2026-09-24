@@ -396,3 +396,57 @@ body {
         object-fit: cover;
     }
 }
+
+#rodape {
+    background-color: var(--b1White); 
+    width: 100%;
+    height: max-content;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    gap: 1rem;
+    * {
+        display: block;
+    }
+
+    span {
+        color: var(--b1Red);
+        font-size:clamp(5.5rem, 8vw, 9vw) ;
+        font-family: var(--fontPrim);
+        font-weight: 700;
+    }
+
+    textarea {
+        height: 10rem;
+        width: 50%;
+        padding: .7rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        width: 15%;
+        height: 7%;
+        color: var(--b1White);
+        background-color: var(--b1Black);
+        border: none;
+        border-radius: 8px;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        flex-wrap: nowrap;
+        cursor: pointer;
+        * {
+            display: block;
+        }
+    }
+}
