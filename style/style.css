@@ -570,7 +570,7 @@ body {
 
   /* Galeria com zoom GSAP */
   .titulo-trabalho {
-    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    font-size: clamp(2rem, 8vw, 3.2rem);
   }
 
   .galeria-scroll {
