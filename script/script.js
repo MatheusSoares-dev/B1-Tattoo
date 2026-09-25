@@ -52,6 +52,7 @@ let LetrasHero = heroTitulo.chars;
 tlHero.from(".hero-img img", {
     opacity: 0,
     x: 400,
+    scale: .5,
     opacity: 0,
     duration: 1,
     ease: "sine.out",
@@ -81,7 +82,7 @@ gsap.to(".hero-img img", {
         trigger: ".hero",
         start: "top top",
         end: "bottom bottom",
-        scrub: true
+        scrub: 3
     }
 })
 
