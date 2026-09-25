@@ -326,7 +326,7 @@ body {
     flex-direction: column;
 
     h1 {
-        
+
         font-family: var(--fontPrim);
         text-transform: uppercase;
         font-size: clamp(5.5rem, 9vw, 10vw);
@@ -372,7 +372,7 @@ body {
     padding: .2rem .8rem;
     border-radius: 8px;
     color: #c8d4cf;
-    
+
 }
 
 .msg-cliente {
@@ -390,15 +390,16 @@ body {
 .img-projeto {
     border: 1px solid transparent;
     padding: 1rem;
+
     img {
-        border-radius: 12px ;
+        border-radius: 12px;
         width: 50%;
         object-fit: cover;
     }
 }
 
 #rodape {
-    background-color: var(--b1White); 
+    background-color: var(--b1White);
     width: 100%;
     height: max-content;
 }
@@ -407,15 +408,17 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     gap: 1rem;
+    border-bottom: 1px solid var(--b1Gray);
+
     * {
         display: block;
     }
 
     span {
         color: var(--b1Red);
-        font-size:clamp(5.5rem, 8vw, 9vw) ;
+        font-size: clamp(4rem, 8vw, 9vw);
         font-family: var(--fontPrim);
         font-weight: 700;
     }
@@ -434,8 +437,8 @@ body {
         justify-content: center;
         text-align: center;
         gap: 10px;
-        width: 15%;
-        height: 7%;
+        width: 15rem;
+        height: 3rem;
         color: var(--b1White);
         background-color: var(--b1Black);
         border: none;
@@ -443,10 +446,473 @@ body {
         font-size: .8rem;
         letter-spacing: 2px;
         text-transform: uppercase;
-        flex-wrap: nowrap;
         cursor: pointer;
-        * {
-            display: block;
+    }
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--b1Gray);
+}
+
+
+.insta span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: .6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--b1Red);
+
+}
+
+.insta a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--b1Black);
+    font-family: var(--fontPrim);
+    font-size: clamp(5rem, 10dvw, 13dvw);
+    font-weight: 800;
+
+    img {
+        width: 9rem;
+    }
+}
+
+.insta a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--b1Black);
+}
+
+.divulgacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-size: 1.1rem;
+    *{
+        display: inline-block;
+    }
+
+    .link-top {
+        text-decoration: none;
+        color: var(--b1Black);
+        display: flex;
+        gap: 2px;
+    }
+
+    p {
+
+        a {
+            font-size: 1.3rem;
+            color: var(--b1Red);
+            text-decoration: none;
         }
     }
+
+    span {
+        font-family: var(--fontTerc);
+    }
+}
+
+/* =========================================================
+   RESPONSIVIDADE MOBILE — B1 Tattoo
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .espaco {
+    padding: 1rem 1.25rem;
+  }
+
+  /* Hero */
+  .hero {
+    margin-bottom: 6rem;
+  }
+
+  .titulo-hero {
+    font-size: clamp(4rem, 18vw, 5.5rem);
+    line-height: 0.9;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 52svh;
+    object-fit: cover;
+  }
+
+  .text-hero {
+    padding-top: 1.25rem;
+  }
+
+  .text-hero p {
+    max-width: 32rem;
+    font-size: .8rem;
+  }
+
+  /* Galeria com zoom GSAP */
+  .titulo-trabalho {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
+  .galeria-scroll {
+    height: 300vh;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 28vw);
+    grid-template-rows: repeat(3, 26vh);
+    gap: 3vw;
+  }
+
+  /* Seção arte */
+  .sessao-arte {
+    height: auto;
+    min-height: 100svh;
+    margin-top: 6rem;
+    padding: 4rem 0;
+  }
+
+  .arte {
+    gap: 2.5rem;
+  }
+
+  .arte h1 {
+    font-size: 2.3rem;
+  }
+
+  .arte p {
+    width: 88%;
+    line-height: 1.8rem;
+  }
+
+  .scroll-horizontal {
+    margin-top: 10rem;
+  }
+
+  .conteudo-scroll,
+  .conteudo {
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .largura {
+    width: 300vw;
+    padding-top: 3rem;
+  }
+
+  .name-horizontal h1 {
+    font-size: clamp(10vh, 40vw, 45vw);
+    white-space: nowrap;
+  }
+
+  /* Artista */
+  .cleiton {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .cleiton img {
+    width: min(72vw, 20rem);
+  }
+
+  .text-cleiton {
+    gap: 2rem;
+  }
+
+  .titulo-artista h1 {
+    font-size: clamp(3.4rem, 18vw, 6rem);
+    line-height: 0.9;
+  }
+
+  .text-cleiton p {
+    width: 88%;
+  }
+
+  /* Processo criativo */
+  .sessao-projeto {
+    margin-top: 6rem;
+  }
+
+  .sessao-projeto h1 {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    line-height: 0.9;
+    padding-bottom: 3rem;
+  }
+
+  /* Simulação de mensagens */
+  .tela-msg {
+    margin-bottom: 4rem;
+  }
+
+  .msg-config {
+    width: 88%;
+    padding: 1.5rem 1rem;
+    gap: 2.5vh;
+  }
+
+  .titulo-msg {
+    font-size: 1.2rem;
+  }
+
+  .balao {
+    max-width: 74%;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .img-projeto {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .img-projeto img {
+    width: 80%;
+  }
+
+  /* Formulário e rodapé */
+  .contato {
+    height: auto;
+    min-height: 0;
+    padding: 2.5rem 0 3rem;
+
+    
+  }
+
+  .contato textarea {
+    width: 100%;
+  }
+
+  .contato button {
+    width: min(15rem, 100%);
+  }
+
+  .insta {
+    padding: 2.5rem 0;
+  }
+
+  .insta a {
+    font-size: clamp(2.5rem, 11vw, 5rem);
+  }
+
+  .divulgacao {
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Ajustes exclusivos para 393 × 852 */
+@media (max-width: 400px) {
+  .hero {
+    margin-bottom: 5rem;
+  }
+
+  .titulo-hero {
+    font-size: clamp(3.7rem, 18vw, 4.7rem);
+  }
+
+  .hero-img img {
+    height: 46svh;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 27vw);
+    grid-template-rows: repeat(3, 24vh);
+    gap: 2.5vw;
+  }
+
+  .sessao-arte {
+    margin-top: 5rem;
+  }
+
+  .arte h1 {
+    font-size: 2rem;
+  }
+
+  .arte p {
+    width: 92%;
+    font-size: 0.95rem;
+  }
+
+  .titulo-artista h1 {
+    font-size: clamp(3rem, 17vw, 4.5rem);
+  }
+
+  .sessao-projeto h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .msg-config {
+    width: 92%;
+  }
+
+  .balao {
+    max-width: 78%;
+    font-size: 0.95rem;
+  }
+
+  .img-projeto img {
+    width: 88%;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .espaco {
+    padding: 1.5rem 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    margin-bottom: 8rem;
+  }
+
+  .titulo-hero {
+    font-size: clamp(5.5rem, 11vw, 7.5rem);
+    line-height: 0.9;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 52svh;
+    object-fit: cover;
+  }
+
+  .text-hero p {
+    font-size: 1rem;
+  }
+
+  /* Galeria GSAP:
+     mantém as proporções para não interferir no zoom */
+  .galeria-scroll {
+    height: 300vh;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 28vw);
+    grid-template-rows: repeat(3, 27vh);
+    gap: 3vw;
+  }
+
+  /* Seção arte */
+  .sessao-arte {
+    height: auto;
+    min-height: 100svh;
+    margin-top: 8rem;
+    padding: 4rem 0;
+  }
+
+  .arte {
+    gap: 5vh;
+  }
+
+  .arte p {
+    width: 65%;
+  }
+
+  /* Scroll horizontal:
+     não alterar largura ou fonte, pois o GSAP depende delas */
+  .conteudo-scroll,
+  .conteudo {
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .largura {
+    width: 300vw;
+  }
+
+  .name-horizontal h1 {
+    font-size: clamp(10vh, 40vw, 45vw);
+    white-space: nowrap;
+  }
+
+  /* Artista */
+  .cleiton {
+    padding: 3rem 2rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .cleiton img {
+    width: 31vw;
+  }
+
+  .text-cleiton {
+    gap: 3rem;
+  }
+
+  .titulo-artista h1 {
+    font-size: clamp(5rem, 14vw, 8rem);
+    line-height: 0.9;
+  }
+
+  .text-cleiton p {
+    width: 70%;
+  }
+
+  /* Processo criativo */
+  .sessao-projeto {
+    margin-top: 8rem;
+  }
+
+  .sessao-projeto h1 {
+    font-size: clamp(4.5rem, 10vw, 7rem);
+    padding-bottom: 4rem;
+    line-height: 0.9;
+  }
+
+  /* Simulação de mensagens:
+     sem width fixo para não afetar a animação GSAP */
+  .msg-config {
+    width: 76%;
+    padding: 2rem 1.25rem;
+    gap: 2.5vh;
+  }
+
+  .titulo-msg {
+    font-size: 1.6rem;
+  }
+
+  .balao {
+    max-width: 56%;
+  }
+
+  .img-projeto img {
+    width: 65%;
+  }
+
+  /* Formulário e rodapé */
+  .contato {
+    height: auto;
+    min-height: 75svh;
+    padding: 3rem 0;
+  }
+
+  .contato textarea {
+    width: 65%;
+  }
+
+  .insta a {
+    font-size: clamp(3.5rem, 9vw, 6rem);
+  }
 }

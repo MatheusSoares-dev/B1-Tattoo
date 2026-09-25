@@ -177,3 +177,17 @@ tlMsg.from(letraMsg.words, {
     width: 0,
     ease: "back.out(1.7))"
 })
+
+const telefone = '553195579701'
+
+
+function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    const textoUsuario = document.getElementsByName('whats')[0].value;
+    const mensagem = `Fala B1, tudo na paz ${textoUsuario}`
+    const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`
+    window.open(url,'_blank')
+
+}
+

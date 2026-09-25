@@ -10,6 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quicksand:wght@300..700&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
 
+        <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="style/style.css">
     <title>B1 Tattoo</title>
 </head>
@@ -35,7 +37,9 @@
         </div>
     </section>
 
-    <section class="hero espaco">
+    <!-- topo da pagina -->
+
+    <section id="inicio" class="hero espaco">
         <h1 class="titulo-hero">B1 tattoo</h1>
 
         <div class="hero-img">
@@ -48,6 +52,8 @@
             <a href="#rodape">Para orçamentos <span>↓</span></a>
         </div>
     </section>
+
+    <!-- Sessao espaco video -->
 
     <main class="espaco">
         <section class="sessao-trabalho">
@@ -109,6 +115,8 @@
         </section>
     </main>
 
+    <!-- Sessao Scroll Horizontal -->
+
     <section class="scroll-horizontal">
         <div class="conteudo-scroll">
             <div class="conteudo espaco">
@@ -120,6 +128,8 @@
             </div>
         </div>
     </section>
+
+    <!-- sessao conheca o artista -->
 
     <section class="theArtist">
         <div class="espaco">
@@ -139,6 +149,7 @@
                 </div>
             </div>
 
+            <!-- Sessao simulacao mensagem -->
 
             <div class="sessao-projeto">
                 <div>
@@ -220,15 +231,33 @@
             </div>
         </div>
     </section>
+
+    <!-- rodape -->
+
     <footer class="espaco" id="rodape">
         <div class="info-orca">
             <div class="contato">
                 <span>Tem um projeto em mente?
                     <br>Vamos conversar.</span>
-                    <textarea name="whats" id="whats" placeholder="Descreva a ideia para sua arte e o local do corpo"></textarea>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6.25C4.91421 6.25 5.25 6.58579 5.25 7C5.25 8.75556 5.96468 9.7804 6.81323 10.3913C7.70002 11.0298 8.78668 11.25 9.5 11.25L17.6893 11.25L13.9697 7.53033C13.6768 7.23744 13.6768 6.76256 13.9697 6.46967C14.2626 6.17678 14.7374 6.17678 15.0303 6.46967L20.0303 11.4697C20.3232 11.7626 20.3232 12.2374 20.0303 12.5303L15.0303 17.5303C14.7374 17.8232 14.2626 17.8232 13.9697 17.5303C13.6768 17.2374 13.6768 16.7626 13.9697 16.4697L17.6893 12.75L9.5 12.75C8.54665 12.75 7.13332 12.4702 5.93677 11.6087C4.70198 10.7196 3.75 9.24444 3.75 7C3.75 6.58579 4.08579 6.25 4.5 6.25Z" fill="currentColor"/></svg> enviar projeto
-                    </button>
+                    <form id="formulario" onsubmit="enviarWhatsApp(event)">
+                        <textarea name="whats" id="whats" placeholder="Descreva a ideia para sua arte e o local do corpo"></textarea>
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6.25C4.91421 6.25 5.25 6.58579 5.25 7C5.25 8.75556 5.96468 9.7804 6.81323 10.3913C7.70002 11.0298 8.78668 11.25 9.5 11.25L17.6893 11.25L13.9697 7.53033C13.6768 7.23744 13.6768 6.76256 13.9697 6.46967C14.2626 6.17678 14.7374 6.17678 15.0303 6.46967L20.0303 11.4697C20.3232 11.7626 20.3232 12.2374 20.0303 12.5303L15.0303 17.5303C14.7374 17.8232 14.2626 17.8232 13.9697 17.5303C13.6768 17.2374 13.6768 16.7626 13.9697 16.4697L17.6893 12.75L9.5 12.75C8.54665 12.75 7.13332 12.4702 5.93677 11.6087C4.70198 10.7196 3.75 9.24444 3.75 7C3.75 6.58579 4.08579 6.25 4.5 6.25Z" fill="currentColor"/></svg> enviar projeto
+                        </button>
+                    </form>
+            </div>
+
+            <div class="insta">
+                <span><span>Galeria de projetos</span> </span>
+                <div class="link">
+                    <a target="_blank" href="https://www.instagram.com/b1.tattoo/">@b1.tattoo</a>
+                </div>
+            </div>
+            <div class="divulgacao">
+                <p>&copy; 2026. Todos os direitos reservados.</p>
+                <h3>B1. Cleiton</h3>
+                <p>Desenvolvido por <a target="_blank" href="https://github.com/MatheusSoares-dev">Matheus Soares</a></p>
+                <a class="link-top" href="#inicio">Inicio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4697 3.46967C11.7626 3.17678 12.2374 3.17678 12.5303 3.46967L18.5303 9.46967C18.8232 9.76256 18.8232 10.2374 18.5303 10.5303C18.2374 10.8232 17.7626 10.8232 17.4697 10.5303L12.75 5.81066L12.75 20C12.75 20.4142 12.4142 20.75 12 20.75C11.5858 20.75 11.25 20.4142 11.25 20L11.25 5.81066L6.53033 10.5303C6.23744 10.8232 5.76256 10.8232 5.46967 10.5303C5.17678 10.2374 5.17678 9.76256 5.46967 9.46967L11.4697 3.46967Z" fill="currentColor"/></svg></a>
             </div>
         </div>
     </footer>
