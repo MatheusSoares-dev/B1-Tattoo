@@ -548,7 +548,7 @@ body {
   }
 
   .titulo-hero {
-    font-size: clamp(4rem, 18vw, 5.5rem);
+    font-size: clamp(2rem, 5rem, 8rem);
     line-height: 0.9;
   }
 
@@ -569,11 +569,11 @@ body {
 
   /* Galeria com zoom GSAP */
   .titulo-trabalho {
-    font-size: clamp(1.8rem, 7.8vw, 3rem);
+    font-size: clamp(1.5rem, 5.5vw, 3rem);
   }
 
   .galeria-scroll {
-    height: 250vh;
+    height: 230vh;
   }
 
   .grid {
